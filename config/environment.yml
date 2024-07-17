@@ -1,0 +1,5 @@
+qa:
+  server: 'https://giuqa.unimed.coop.br/login'
+  
+hml:
+  server: 'https://minderp.com.br/'
