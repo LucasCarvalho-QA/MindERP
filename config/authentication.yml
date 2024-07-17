@@ -5,5 +5,5 @@ qa:
 
 hml:
   login:
-    email: 'usuario2@auditeste.com.br'
+    email: 'usuario@auditeste.com.br'
     senha: 'Xx1234'

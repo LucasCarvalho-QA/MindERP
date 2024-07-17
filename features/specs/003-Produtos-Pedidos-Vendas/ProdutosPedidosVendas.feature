@@ -1,7 +1,7 @@
 #language: pt
 
 @cenarios-de-produtos-pedidos-de-vendas
-Funcionalidade: Pedidos de Vendas
+Funcionalidade: Produtos do Pedido de Vendas
 
 @cadastrar-produtos-pedidos-de-vendas
 Cenário: [Pedidos][Produtos do Pedido de Vendas] Cadastrar produtos ao pedido de vendas com dados válidos - DEVE retornar sucesso

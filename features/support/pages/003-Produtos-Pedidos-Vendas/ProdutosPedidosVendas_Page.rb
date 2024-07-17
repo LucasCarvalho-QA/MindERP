@@ -27,8 +27,6 @@ class ProdutosPedidosVendas_Page < SitePrism::Page
   end  
   
   def validar_itens_adicionados(quantidade_produto)
-    find(:xpath, '//*[@id="w5"]/div[1]')
-    
     elemento = find(:xpath, '//*[@id="w5"]/div[1]/b')
     elemento.text.include?(quantidade_produto)
   end
