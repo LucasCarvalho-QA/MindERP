@@ -8,12 +8,15 @@ class ProdutosPedidosVendas_Page < SitePrism::Page
   end
   
   def inserir_valor_campo_Quantidade(quantidade)     
-    find(:xpath, '//*[@id="prodpedidovendas-quantidade"]').click
+    sleep 1
+    find(:xpath, '//*[@id="prodpedidovendas-quantidade"]').click    
     find(:xpath, '//*[@id="prodpedidovendas-quantidade"]').send_keys(quantidade)    
   end
 
   def inserir_valor_campo_PrecoUnitario(preco_unitario)     
+    sleep 1
     find(:xpath, '//*[@id="prodpedidovendas-precounitario-disp"]').click
+    find(:xpath, '//*[@id="prodpedidovendas-precounitario-disp"]').set('')
     find(:xpath, '//*[@id="prodpedidovendas-precounitario-disp"]').send_keys(preco_unitario)    
   end
 

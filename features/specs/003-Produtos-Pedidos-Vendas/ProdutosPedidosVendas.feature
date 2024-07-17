@@ -9,6 +9,7 @@ Cenário: [Pedidos][Produtos do Pedido de Vendas] Cadastrar produtos ao pedido d
     
     E insira "COXIM" no campo Produto
     E insira "1" no campo Quantidade    
+    E insira "5000" no campo Preço Unitário
     E inclua esse item ao Pedido de Venda
 
     E insira "100.0001" no campo Produto

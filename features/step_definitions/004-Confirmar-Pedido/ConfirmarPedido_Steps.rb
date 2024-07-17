@@ -5,6 +5,7 @@ Dado('que exista um Pedido de Venda pendente de aprovação') do
 
   @ProdutosPedidosVendas_Page.inserir_valor_campo_Produto("COXIM")
   @ProdutosPedidosVendas_Page.inserir_valor_campo_Quantidade("1")    
+  @ProdutosPedidosVendas_Page.inserir_valor_campo_PrecoUnitario("5000")
   @ProdutosPedidosVendas_Page.pressionar_botao_salvar_produtoPedidoVendas
 
   @ProdutosPedidosVendas_Page.inserir_valor_campo_Produto("100.0001")

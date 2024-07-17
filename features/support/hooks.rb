@@ -4,6 +4,7 @@ Before do
     @PedidosVendas_Page = PedidosVendas_Page.new
     @ProdutosPedidosVendas_Page = ProdutosPedidosVendas_Page.new
     @ConfirmarPedido_Page = ConfirmarPedido_Page.new
+    @LiberacaoComercial_Page = LiberacaoComercial_Page.new
 end
 
 # Before com tag executa antes do cenário que estiver com esta tag comentada
