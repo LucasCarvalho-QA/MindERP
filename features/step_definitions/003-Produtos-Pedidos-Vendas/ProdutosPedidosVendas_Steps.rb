@@ -21,6 +21,6 @@ E('inclua esse item ao Pedido de Venda') do
   @ProdutosPedidosVendas_Page.pressionar_botao_salvar_produtoPedidoVendas
 end
 
-Então('produtos serão adicionados ao Pedido de Vendas com sucesso') do  
-  @ProdutosPedidosVendas_Page.validar_itens_adicionados
+Então('produtos serão adicionados {string} Produtos ao Pedido de Vendas com sucesso') do |quantidade_produto| 
+  @ProdutosPedidosVendas_Page.validar_itens_adicionados(quantidade_produto)
 end
