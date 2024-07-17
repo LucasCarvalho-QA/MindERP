@@ -19,7 +19,7 @@ class LiberacaoComercial_Page < SitePrism::Page
 
   def validar_remocao_de_item_em_listagem(quantidade_esperada)
     quantidade_encontrada = find(:xpath, '//*[@id="w1"]/div[1]/b[2]').text.to_i    
-    expect(quantidade_esperada).to eq(quantidade_encontrada)
+    expect(quantidade_esperada-1).to eq(quantidade_encontrada)
   end
 
 
@@ -30,7 +30,7 @@ class LiberacaoComercial_Page < SitePrism::Page
 
   def validar_situacao_comercial_pedido(situacao_comercial_esperada)
     situacao_comercial_encontrada = find(:xpath, '//*[@id="w1-container"]/table/tbody[1]/tr[1]/td[14]').text    
-    expect(situacao_comercial_encontrada).to eq(situacao_comercial_esperada-1)
+    expect(situacao_comercial_encontrada).to eq(situacao_comercial_esperada)
   end
 
   def scroll_ate_fim_da_pagina
