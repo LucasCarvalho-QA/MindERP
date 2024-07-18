@@ -1,8 +1,10 @@
 Dado('que o usuário tenha um Pedido de Venda cadastrado') do
-  @Login_Page.load
-  @Login_Page.inserir_credenciais_validas  
-  
-  @PedidosVendas_Page.cadastrar_pedido_de_vendas
+    #001-Login
+    @Login_Page.load
+    @Login_Page.inserir_credenciais_validas    
+    
+    #002-Pedidos-Vendas
+    @PedidosVendas_Page.cadastrar_pedido_de_vendas
 end
 
 E('insira {string} no campo Produto') do |produto|
@@ -21,6 +23,6 @@ E('inclua esse item ao Pedido de Venda') do
   @ProdutosPedidosVendas_Page.pressionar_botao_salvar_produtoPedidoVendas
 end
 
-Então('produtos serão adicionados {string} Produtos ao Pedido de Vendas com sucesso') do |quantidade_produto| 
+Então('serão adicionados {string} Produtos ao Pedido de Vendas com sucesso') do |quantidade_produto| 
   @ProdutosPedidosVendas_Page.validar_itens_adicionados(quantidade_produto)
 end

@@ -17,4 +17,4 @@ Cenário: [Pedidos][Produtos do Pedido de Vendas] Cadastrar produtos ao pedido d
     E insira "5000" no campo Preço Unitário
     E inclua esse item ao Pedido de Venda    
     
-    Então produtos serão adicionados "2" Produtos ao Pedido de Vendas com sucesso
+    Então serão adicionados "2" Produtos ao Pedido de Vendas com sucesso

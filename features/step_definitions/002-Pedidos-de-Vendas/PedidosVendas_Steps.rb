@@ -1,7 +1,8 @@
-Dado('que o usuário esteja autenticado no Portal MindERP') do
+Dado('que o usuário esteja autenticado no Portal MindERP') do    
+    #001-Login
     @Login_Page.load
-    @Login_Page.inserir_credenciais_validas
-    @Login_Page.validar_conteudo_na_pagina("AUDITESTE")
+    @Login_Page.inserir_credenciais_validas    
+    @Login_Page.validar_conteudo_na_pagina("AUDITESTE")  
 end
 
 E('inicia o fluxo Pedidos > Pedidos de Vendas') do

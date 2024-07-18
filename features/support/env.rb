@@ -64,7 +64,7 @@ Capybara.register_driver :headless_chrome do |app|
   )
 end
 
-Capybara.default_driver = :chrome
+Capybara.default_driver = :headless_chrome
 # Executa sem subir o navegador :headless_chrome
 # Executa com Firefox :selenium
 # Executa com o Chrome :chrome

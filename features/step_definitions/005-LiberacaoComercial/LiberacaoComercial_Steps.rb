@@ -27,12 +27,12 @@ Dado('que exista um Pedido de Venda aprovado') do
   @ConfirmarPedido_Page.validar_situacao_comercial_pedido("Aprovado")
 end
 
-Dado('esteja na tela de Liberacao Comercial') do  
+E('esteja na tela de Liberacao Comercial') do  
   @LiberacaoComercial_Page.acessar_tela_Liberacao_Comercial
   @quantidade_pedido_de_vendas = @LiberacaoComercial_Page.retornar_quantidade_de_pedidos_na_listagem
 end
 
-Então('o campo Situação do Pedido de Vendas deve ser {string} para Liberacao Comercial') do |situacao_esperada|
+E('o campo Situação do Pedido de Vendas deve ser {string} para Liberacao Comercial') do |situacao_esperada|
   @LiberacaoComercial_Page.validar_situacao_pedido(situacao_esperada)
 end
 
